@@ -28,26 +28,15 @@ jobs:
       
     - name: Run tests
       run: |
-      echo "running TestProject1"
-      dotnet test TestProject1/TestProject1.csproj --verbosity normal
+       echo "running TestProject1"
+       dotnet test TestProject1/TestProject1.csproj --verbosity normal
       
     - name: Run tests
       run: |
-      echo "running TestProject2"
-      dotnet test TestProject1/TestProject2.csproj --verbosity normal
+       echo "running TestProject2"
+       dotnet test TestProject1/TestProject2.csproj --verbosity normal
       
     - name: Run tests
       run: |
-      echo "running TestProject3"
-      dotnet test TestProject1/TestProject3.csproj --verbosity normal
-      
-    - name: Install Chrome
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y google-chrome-stable
-        
-    - name: Install dependencies
-      run: dotnet restore
-      
-    - name: Build with chrome
-      run: dotnet build --no-restore
+       echo "running TestProject3"
+       dotnet test TestProject1/TestProject3.csproj --verbosity normal
